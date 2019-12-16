@@ -6,7 +6,8 @@ RUN apk add --no-cache \
     pdftk \
     qpdf \
     poppler \
-    poppler-utils &&\
+    poppler-utils \
+    ghostscript &&\
     mkdir /pdf
 
 COPY ./entrypoint.sh /
